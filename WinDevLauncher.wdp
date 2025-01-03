@@ -1,0 +1,24 @@
+// WinDev Project File (WinDevLauncher.wdp)
+    // This is a simplified representation of a WinDev project file.
+    // In a real WinDev project, this file would contain more detailed information.
+
+    // Project Name
+    ProjectName = "DotNetLauncher"
+
+    // Project Description
+    ProjectDescription = "Launches a .NET application in the same folder."
+
+    // Project Type
+    ProjectType = "Application"
+
+    // Project Language
+    ProjectLanguage = "WD"
+
+    // Project Version
+    ProjectVersion = "1.0"
+
+    // Project Files
+    ProjectFiles = [
+      "LauncherWindow.wdw",
+      "LauncherCode.wdi"
+    ]

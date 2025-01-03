@@ -1,0 +1,14 @@
+{
+      "name": "bootstrap-blog",
+      "version": "1.0.0",
+      "description": "Bootstrap blog cards",
+      "scripts": {
+        "dev": "vite"
+      },
+      "dependencies": {
+        "bootstrap": "^5.3.2"
+      },
+      "devDependencies": {
+        "vite": "^5.0.12"
+      }
+    }

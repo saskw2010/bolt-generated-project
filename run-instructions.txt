@@ -1,0 +1,22 @@
+To use this new `index.html` file:
+
+    1.  **File Location:**
+        -   The `index.html` file can be placed in any directory on your local machine. It does not need to be in the same directory as your ASP.NET files.
+
+    2.  **How it Works:**
+        -   The `index.html` file contains the HTML content extracted from the `BlogPosts.aspx` file.
+        -   It will display the same visual content as `BlogPosts.aspx`, but it will not have any of the ASP.NET server-side functionality.
+        -   This means that the `index.html` file is a static HTML page and does not require a web server to run.
+
+    3.  **Running the HTML File:**
+        -   You can open the `index.html` file directly in your web browser (e.g., Chrome, Firefox, Safari) by double-clicking the file.
+        -   The browser will render the HTML content.
+
+    4.  **Important Notes:**
+        -   The `index.html` file does not have any of the ASP.NET server-side code. It is a static HTML page.
+        -   If you need to have dynamic content or server-side functionality, you will need to use ASP.NET or another server-side technology.
+        -   The `index.html` file uses the Bootstrap CSS and JavaScript from CDN links.
+
+    5.  **WebContainer Limitations:**
+        -   Please note that the current environment (WebContainer) does not support running full ASP.NET applications. It is a browser-based environment that cannot execute .NET code directly.
+        -   The provided `index.html` file is for demonstration purposes and can be used in any environment that supports HTML.

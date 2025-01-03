@@ -1,0 +1,26 @@
+// WinDev Window File (LauncherWindow.wdw)
+    // This is a simplified representation of a WinDev window file.
+    // In a real WinDev project, this file would contain more detailed information.
+
+    // Window Name
+    WindowName = "LauncherWindow"
+
+    // Window Title
+    WindowTitle = "Launch .NET Application"
+
+    // Window Size
+    WindowWidth = 400
+    WindowHeight = 200
+
+    // Window Controls
+    WindowControls = [
+      {
+        ControlType = "Button",
+        ControlName = "LaunchButton",
+        ControlCaption = "Launch Application",
+        ControlLeft = 150,
+        ControlTop = 80,
+        ControlWidth = 100,
+        ControlHeight = 30
+      }
+    ]

@@ -1,0 +1,37 @@
+Unfortunately, I cannot directly preview a .NET website running on `localhost:8080` within this environment (WebContainer). Here's why:
+
+    1.  **WebContainer Limitations:**
+        -   WebContainer is a browser-based environment that emulates a Linux system. It does not have the capability to run full .NET applications or host a local web server that can be accessed from outside the container.
+        -   It cannot execute .NET code directly, and it does not have the necessary infrastructure to run ASP.NET applications.
+
+    2.  **Localhost and Port 8080:**
+        -   `localhost:8080` refers to a web server running on your local machine (outside of WebContainer) on port 8080.
+        -   WebContainer cannot access resources running on your local machine's network. It operates in an isolated environment.
+
+    3.  **ASP.NET Requirements:**
+        -   ASP.NET applications require the .NET Framework or .NET Core/.NET to be installed on the server.
+        -   They also need a web server like IIS or IIS Express to host the application.
+        -   WebContainer does not have these components.
+
+    4.  **How to Preview:**
+        -   To preview your .NET website, you need to run it in a proper .NET development environment:
+            -   **Visual Studio:** If you are using Visual Studio, you can run the project, and it will launch the website in your default browser.
+            -   **IIS:** If you are using IIS, you can browse to the website URL in your browser.
+            -   **Command Line:** If you are using the PowerShell or batch scripts, you can run the script, and then open your browser and navigate to `http://localhost:8080`.
+
+    5.  **Steps to Preview (Outside WebContainer):**
+        1.  **Ensure .NET Framework is Installed:** Make sure you have .NET Framework 4.7.2 (or the version you are targeting) installed on your machine.
+        2.  **Place Files:** Put your ASP.NET files (`.aspx`, `.cs`, `web.config`) in a directory.
+        3.  **Run the Website:**
+            -   **Visual Studio:** Open the project and run it.
+            -   **IIS:** Configure a website in IIS to point to the directory and browse to the website URL.
+            -   **Scripts:** Run the `run-website.ps1` or `run-website.bat` script, and then open your browser and navigate to `http://localhost:8080`.
+        4.  **Open Browser:** Open your web browser and navigate to `http://localhost:8080`. You should see your ASP.NET website running.
+
+    6.  **WebContainer Limitations (Again):**
+        -   I cannot provide a live preview of your .NET website within this environment. You need to run the website on your local machine using the methods described above.
+
+    **In Summary:**
+
+    -   I cannot directly preview your .NET website running on `localhost:8080` within WebContainer.
+    -   You need to run the website in a proper .NET development environment (Visual Studio, IIS, or using the provided scripts) and then open your browser to view it.

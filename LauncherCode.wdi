@@ -1,0 +1,27 @@
+// WinDev Code File (LauncherCode.wdi)
+    // This is a simplified representation of a WinDev code file.
+    // In a real WinDev project, this file would contain more detailed code.
+
+    // Code for the Launch Button
+    PROCEDURE LaunchButton_Click()
+      // Get the path to the current directory
+      sCurrentDirectory is string = fCurrentDir()
+
+      // Construct the path to the .NET executable (assuming it's named StartExamples.exe)
+      sExecutablePath is string = sCurrentDirectory + "\StartExamples.exe"
+
+      // Check if the executable exists
+      IF fFileExist(sExecutablePath) THEN
+        // Launch the executable
+        Info("Launching: " + sExecutablePath)
+        fExecuteProcess(sExecutablePath)
+      ELSE
+        // Display an error message if the executable is not found
+        Error("Executable not found: " + sExecutablePath)
+      END
+    END
+
+    // Code for the Window Initialization
+    PROCEDURE LauncherWindow_Initialize()
+      // No specific initialization needed for this example
+    END

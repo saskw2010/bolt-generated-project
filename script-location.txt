@@ -1,0 +1,44 @@
+The PowerShell script file (`run-website.ps1`) should be placed in the same directory as your ASP.NET website files. This directory should contain:
+
+    1.  **Your ASP.NET files:**
+        -   `BlogPosts.aspx` (or your main .aspx page)
+        -   `BlogPosts.aspx.cs` (or your code-behind file)
+        -   Any other .aspx files, .ascx files, etc.
+    2.  **`web.config` file:**
+        -   The configuration file for your ASP.NET application.
+    3.  **The PowerShell script:**
+        -   `run-website.ps1`
+
+    **Example Directory Structure:**
+
+    ```
+    MyWebsite/
+    ├── BlogPosts.aspx
+    ├── BlogPosts.aspx.cs
+    ├── web.config
+    ├── run-website.ps1
+    └── (other website files)
+    ```
+
+    **Explanation:**
+
+    -   The PowerShell script uses `$PSScriptRoot` to determine its own directory. This variable automatically contains the full path to the directory where the script is located.
+    -   The script then uses this path as the website path. This means that the script will try to run the website located in the same directory as the script itself.
+    -   By placing the script in the same directory as your website files, you ensure that the script can correctly locate and run your website.
+
+    **How to Run:**
+
+    1.  Open PowerShell as an administrator.
+    2.  Navigate to the directory where you saved the `run-website.ps1` file.
+    3.  Run the script using: `.\run-website.ps1`
+
+    **Important Notes:**
+
+    -   Make sure that the script is in the correct location relative to your website files.
+    -   The script assumes that the `aspnet_wp.exe` executable is located in the standard .NET Framework directory.
+    -   The script will start the website on the specified port (default is 8080).
+    -   You need to run the script as an administrator because it needs to start and stop processes.
+
+    **WebContainer Limitations:**
+
+    -   Please note that the current environment (WebContainer) does not support running full ASP.NET applications. It is a browser-based environment that cannot execute .NET code directly. The provided information is for demonstration purposes and would need to be used in a proper Windows environment with .NET Framework installed.
